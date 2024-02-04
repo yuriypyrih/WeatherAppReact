@@ -1,0 +1,22 @@
+
+.root {
+  padding: 16px 0;
+  background-image: url('sky.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Handlee", cursive;
+  color: #C9D1D9;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}

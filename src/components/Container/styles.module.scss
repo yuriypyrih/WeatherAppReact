@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  justify-content: center;
+}
+
+.bodyContent {
+  max-width: 960px;
+  flex: 1;
+  margin: 0 16px;
+}

@@ -1,0 +1,43 @@
+.root {
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(-20deg, rgba(0,32,37, 1) 0%, rgba(0,32,37, 0) 200px, rgba(0,32,37, 0) 100%);
+  cursor: pointer;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.country {
+  opacity: 0.8;
+  font-size: 22px;
+}
+
+.weatherContainer {
+  display: flex;
+  flex: 0;
+  gap: 32px;
+  align-items: flex-end;
+}
+
+.description {
+  font-size: 18px;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.location{
+  width: 260px;
+
+  @media (max-width: 600px) {
+    width: 160px;
+  }
+}
+
+

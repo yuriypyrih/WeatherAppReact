@@ -1,0 +1,70 @@
+@import '@/scss/theme';
+
+.cityList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 28px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.button {
+  width: 30px;
+  height: 30px;
+  color: $light-grey;
+  cursor: pointer;
+}
+
+.label {
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.country {
+  opacity: 0.8;
+  font-size: 22px;
+}
+
+.detailsContainer {
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(-20deg, rgba(0,32,37, 1) 0%, rgba(0,32,37, 0.2) 200px, rgba(0,32,37, 0) 100%);
+  cursor: pointer;
+}
+
+.weatherIcon {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.stats {
+  text-align: end;
+  white-space: nowrap;
+}
+

@@ -1,0 +1,54 @@
+@import '@/scss/theme';
+
+.root {
+  position: relative;
+}
+
+.inputField {
+  width: 260px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 16px;
+  padding-left: 12px;
+  background: rgb(0,32,37);
+  border: 1px solid $dark-grey;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: #C9D1D9;
+  z-index: 10;
+}
+
+.dropdown {
+  width: 260px;
+  position: absolute;
+  padding: 24px 0 4px 0;
+  background: rgb(0,32,37);
+  border: 1px solid $dark-grey;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  z-index: 10;
+  top: 46px;
+  left: 0;
+}
+
+.item {
+  padding: 2px 8px;
+  cursor: pointer;
+  font-size: 16px;
+
+  &:hover {
+    background-color: #66ffff20;
+  }
+}
+
+.noOptions {
+  padding: 4px 8px;
+  font-size: 16px;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  user-select: none;
+  cursor: pointer;
+}
