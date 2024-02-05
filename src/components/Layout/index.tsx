@@ -6,6 +6,7 @@ import Container from 'components/Container';
 type TProps = {
   children: React.ReactNode;
 };
+// Minimal layout
 const Layout: React.FC<TProps> = ({ children }) => {
   return (
     <div className={styles.root}>

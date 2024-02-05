@@ -9,6 +9,7 @@ type TProps = {
 };
 
 const CityCard: React.FC<TProps> = ({ city }) => {
+  // A fancy lovely weather report card!
   const { location, weather } = city;
   const navigate = useNavigate();
 

@@ -9,6 +9,9 @@ import { fetchLocations } from '../../redux/slices/locationSlice.ts';
 import { useNavigate } from 'react-router-dom';
 import useOnClickOutside from '../../hooks/useOnClickOutside.ts';
 
+// Ideally this search field would allow you to pass the value/onChange pairs as props.
+// Or even better to be able to support being part of a React Form!
+// Going the extra length for this demonstration wasn't necessary.
 const LocationSearchField: FC = () => {
   const { locations } = useSelector((state: RootState) => state.location);
   const dispatch = useDispatch<AppDispatch>();

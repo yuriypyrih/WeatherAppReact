@@ -4,6 +4,7 @@ import HomePage from 'pages/HomePage';
 import CityPage from 'pages/CityPage';
 
 const AppRoutes: React.FC = () => {
+  // Some fancy routing going on!
   return (
     <Router>
       <Routes>

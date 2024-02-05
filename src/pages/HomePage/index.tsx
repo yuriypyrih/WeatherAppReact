@@ -8,10 +8,13 @@ import { dummyFavorites } from '../../utils/dummy.ts';
 import { clean, fetchFavorite } from '../../redux/slices/favoriteSlice.ts';
 
 const HomePage: React.FC = () => {
+  // A list
   const dispatch = useDispatch<AppDispatch>();
   const { favouriteCities } = useSelector((state: RootState) => state.favorite);
 
   useEffect(() => {
+    // A little bit of hard coded list of favorite cities. I would love to implement the backend side
+    // myself but since it's outside the scope of this project I had to go for compromises.
     dummyFavorites.forEach((favorite) => {
       dispatch(fetchFavorite({ lat: favorite[0], lon: favorite[1] }));
     });

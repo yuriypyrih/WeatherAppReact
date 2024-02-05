@@ -15,6 +15,12 @@ const initialState: FavoriteState = {
   favouriteCities: [],
   isLoading: false,
 };
+
+// The OpenWeatherMap API was something that I found last minute to use as
+// the foundation for this project demonstration for the ability to consume REST APIs.
+// However, that being said, the API itself turned to be quite limited as to what you can fetch at the same time.
+// Which lead to some... questionable wiring. Like fetching locations (lat/lon) and the weather detail separate.
+// That is highly inefficient and would it be my/our backend that would have been fixed ASAP.
 export const fetchFavorite = createAsyncThunk(
   'favorite/fetchFavorite',
   async (args: { lat: number; lon: number }, { getState, rejectWithValue }) => {

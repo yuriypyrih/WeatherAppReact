@@ -12,6 +12,7 @@ import { useNavigate, useSearchParams } from 'react-router-dom';
 import { fetchWeather, setFavorite } from '../../redux/slices/citySlice.ts';
 import { dummyFavorites } from '../../utils/dummy.ts';
 const CityPage: React.FC = () => {
+  // This page displays all additional info about the city weather plus the add-favorite functionality
   const { selectedCity, isLoading } = useSelector((state: RootState) => state.city);
   const { location, weather, favorite } = selectedCity || {};
   const dispatch = useDispatch<AppDispatch>();

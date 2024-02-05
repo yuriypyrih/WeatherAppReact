@@ -19,7 +19,6 @@ const initialState: CityState = {
   isError: false,
 };
 
-//eslint-disable-next-line
 export const extractWeatherData = (data: { current: any }): Weather => ({
   temp: data.current.temp,
   humidity: data.current.humidity,
